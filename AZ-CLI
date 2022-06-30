@@ -1,0 +1,4 @@
+#Comandos AZ
+
+1 - Listar IPS públicos das VMs e seus respectivos nomes:
+    az vm list-ip-addresses -n SampleVM -o table
