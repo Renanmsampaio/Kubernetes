@@ -1,8 +1,0 @@
-.terraform
-.env
-tfplan
-terraform.tfstate*
-.terraform.lock*
-destroy
-plano
-
