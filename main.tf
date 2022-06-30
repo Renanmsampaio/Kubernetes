@@ -8,8 +8,8 @@ terraform {
     }
     backend "azurerm" {
         storage_account_name = "stateterraform001"
-        container_name       = "tfstate2"
-        key                  = "terraform.tfstate"
+        container_name       = "nomedocontainer"
+        key                  = "terraform.key"
         use_azuread_auth     = true
     }
 }
