@@ -1,6 +1,3 @@
-Execute o seguinte comando para configurar o alias e autocomplete para o kubectl.
-source <(kubectl completion bash) # configura o autocomplete na sua sessão atual (antes, certifique-se de ter instalado o pacote bash-completion).
-echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permanentemente ao seu shell.
-Crie o alias k para kubectl:
-alias k=kubectl
-complete -F __start_kubectl k
+sudo apt install -y bash-completion
+kubectl completion bash > /etc/bash_completion.d/kubectl
+source <(kubectl completion bash)
