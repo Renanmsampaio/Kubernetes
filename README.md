@@ -3,7 +3,7 @@ Alguns itens pra auxílio nos estudos para a prova CKA que vou fazer
 
 Para me prepara estou a utilizar o treinamento descomplicando Kubernetes da LinuxTips.
 
-Livro base para estudo: https://livro.descomplicandokubernetes.com.br
+[Livro para Estudos](https://livro.descomplicandokubernetes.com.br).
   Este livro foi feito desenvolvido linuxTips e é mantido pela comunidade.
 
 Utilizo para lab VMs no azure devido a ter conta MSDN com créditos mensais, terraform com código para subir lab.
