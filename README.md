@@ -19,3 +19,4 @@ Lab em terraform:
 ***lembrando é um código simples para somente acelerar o processo de criação de LABs, caso deseje utilizar terraform em sua empresa, deve ser levado em consideração outra estrutura de código.
 
 
+#Todo material e linha de comando exceto os códigos em terraform foram extraidos do livro na descrição acima.
