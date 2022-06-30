@@ -6,7 +6,7 @@ Para me prepara estou a utilizar o treinamento descomplicando Kubernetes da Linu
 [Livro para Estudos](https://livro.descomplicandokubernetes.com.br).
   Este livro foi escrito e desenvolvido pelo Jeferson Fernando da linuxTips e é mantido pela comunidade.
 
-Utilizo para lab VMs no azure devido a ter conta MSDN com créditos mensais.
+Para meus labs, utilzo VMs no azure devido a ter conta MSDN com créditos mensais.
 
 Lab em terraform:
 
