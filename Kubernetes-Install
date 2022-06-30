@@ -1,0 +1,40 @@
+Passo 1 - sudo vim /etc/modules-load.d/k8s.conf
+Conteúdo:
+br_netfilter
+ip_vs
+ip_vs_rr
+ip_vs_sh
+ip_vs_wrr
+nf_conntrack_ipv4
+
+Passo 2 - sudo curl -fsSL https://get.docker.com | bash
+
+Passo 3- sudo cat > /etc/docker/daemon.json <<EOF
+{
+  "exec-opts": ["native.cgroupdriver=systemd"],
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "100m"
+  },
+  "storage-driver": "overlay2"
+}
+EOF
+
+Passo 4 - sudo mkdir -p /etc/systemd/system/docker.service.d
+
+Passo 5 - sudo systemctl daemon-reload
+sudo systemctl restart docker
+
+Passo 6 - sudo docker info | grep -i cgroup
+
+Passo 7 - sudo apt-get update && sudo apt-get install -y apt-transport-https gnupg2
+
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+
+sudo echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" > /etc/apt/sources.list.d/kubernetes.list
+
+sudo apt-get update
+
+sudo apt-get install -y kubelet kubeadm kubectl
+
+Passo 8 - sudo swapoff -a
