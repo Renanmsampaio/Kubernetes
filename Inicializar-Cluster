@@ -1,0 +1,20 @@
+#Configuração do cluster
+
+Passo 1 - Executar: kubeadm config images pull
+
+Erro: 
+  "failed to pull image "k8s.gcr.io/kube-apiserver:v1.24.1" 
+Solução:
+  Comentar a linha: disabled_plugins = ["cri"] no arquivo: /etc/containerd/config.toml 
+  ou deletar o arquivo.
+  
+  Execute: systemctl restart containerd
+  Repetir novamente o comando
+
+2 - sudo kubeadm init
+
+3 - sudo mkdir -p $HOME/.kube
+
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
