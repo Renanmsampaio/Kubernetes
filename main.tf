@@ -5,9 +5,7 @@ terraform {
             source  = "hashicorp/azurerm"
             version = "=3.6.0"
         }
-        
     }
-
     backend "azurerm" {
         storage_account_name = "stateterraform001"
         container_name       = "tfstate2"
