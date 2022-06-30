@@ -1,5 +1,5 @@
 # Kubernetes
-Alguns itens pra auxílio nos estudos para a prova CKA que vou fazer
+Alguns ítens pra auxílio nos estudos para a prova CKA que vou fazer
 
 Para me prepara estou a utilizar o treinamento descomplicando Kubernetes da LinuxTips.
 
