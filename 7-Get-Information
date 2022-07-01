@@ -1,0 +1,3 @@
+kubectl describe service nginx
+kubectl logs -f nginx
+kubectl get services nginx -o yaml > svc001.yaml
