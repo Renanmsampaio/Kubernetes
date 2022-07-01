@@ -2,3 +2,11 @@ kubectl run nginx --image nginx --port=80
 kubectl expose pod nginx
 kubectl get service
 kubecetl get endpoints
+
+Ou
+
+kubectl run nginx --image nginx --dry-run=client -o yaml > pod-template.yaml
+kubectl create -f pod-template.yaml
+kubectl expose pod nginx --port 80
+kubectl get service
+kubecetl get endpoints
