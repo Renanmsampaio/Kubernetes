@@ -1,11 +1,11 @@
-Passo 1 - sudo vim /etc/modules-load.d/k8s.conf
-Conteúdo:
+Passo 1 - sudo cat > /etc/modules-load.d/k8s.conf <<EOF
 br_netfilter
 ip_vs
 ip_vs_rr
 ip_vs_sh
 ip_vs_wrr
 nf_conntrack_ipv4
+EOF
 
 Passo 2 - sudo curl -fsSL https://get.docker.com | bash
 
